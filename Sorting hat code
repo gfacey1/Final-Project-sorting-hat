@@ -1,0 +1,23 @@
+GREEN = '\033[92m'
+RED = '\033[91m'
+BLUE ='\033[94m'
+YELLOW = '\033[93m'
+ENDC = '\033[0m'
+
+print("Welcome to hogwarts! The sorting hat will now be placed upon your head and deem you worthy of a house based on your personality.")
+
+courage = input("Are you courageous? (yes or no) ")
+loyalty = input("Are you loyal (yes or no) ") 
+intelligence = input("Are you intelligent? (yes or no) ")
+ambition = input("Are you ambitious? (yes or no) ")
+
+if courage == "yes" and loyalty == "no" and intelligence == "no" and ambition == "yes":
+  print(GREEN +"Congratulations! You belong to slytherin house!" + ENDC )
+elif courage == "yes" and loyalty == "yes" and intelligence == "no" and ambition == "no":
+  print(RED + "Congratulations! You belong to gryffindor house!"+ ENDC)
+elif courage == "no" and loyalty == "yes" and intelligence == "no" and ambition == "no":
+  print(BLUE + "Congratulations You belong to Ravenclaw house!" + ENDC)
+elif courage == "yes" and loyalty == "no" and intelligence == "yes" and ambition == "no":
+  print(YELLOW + "Congratulations! You belong to Hufflepuff house!" + ENDC)
+else:
+  print("You don't seem to to posses any of the qualities to be sorted into a house here at hogwarts")
